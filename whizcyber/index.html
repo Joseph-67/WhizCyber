@@ -49,18 +49,19 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
    line-height: 1.5;
    overflow-wrap: break-word;
    }
-        /* Styles for chatbot container */
+        /* Ensure chatbot stays above other content */
         #chatbot-container {
             position: fixed;
             bottom: 20px;
             right: 20px;
             width: 300px;
-            max-width: 90vw;
+            max-width: 90vw;  /* Flexible width */
             display: none;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             overflow: hidden;
             background-color: #fff;
+            z-index: 1050; /* Keep it on top */
         }
         #chat-header {
             background-color: #007bff;
@@ -140,6 +141,61 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
             font-size: 24px;
             cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            #chatbot-container {
+                width: 90vw;
+                bottom: 10px;
+                right: 10px;
+            }
+            #chat-header {
+                font-size: 14px;
+                padding: 8px;
+            }
+            #chat-window {
+                height: 250px;
+                padding: 10px;
+            }
+            .message {
+                font-size: 14px;
+            }
+            #chat-input-area {
+                padding: 8px;
+            }
+            #user-input {
+                padding: 10px;
+                font-size: 14px;
+            }
+            #send-button {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+            #chat-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #chatbot-container {
+                width: 95vw;
+                bottom: 5px;
+                right: 5px;
+            }
+            #chat-header {
+                font-size: 12px;
+                padding: 6px;
+            }
+            .faq-suggestion {
+                font-size: 12px;
+                padding: 4px;
+                margin: 3px 0;
+            }
+            #user-input {
+                font-size: 12px;
+            }
         }
 </style>
 </head>
