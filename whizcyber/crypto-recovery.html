@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Crypto Scam Recovery | WhizCyber</title>
+<title>Crypto Scam Recovery | AdrianCyber</title>
 <link rel="apple-touch-icon" sizes="57x57" href="https://html.designingmedia.com/whizcyber/assets/images/favicons/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
@@ -34,6 +34,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/chatbot.css">
+
 <style>
     .dropdown-menu{
      min-width: 250px;
@@ -297,6 +299,21 @@
         </div>
     </div>
 </section>
+<!-- Chatbot Icon -->
+<div id="chat-icon" onclick="toggleChatbot()">💬</div>
+
+<!-- Chatbot Container -->
+<div id="chatbot-container">
+    <div id="chat-header">
+        Chat with Us
+        <span style="cursor: pointer;" onclick="toggleChatbot()">×</span>
+    </div>
+    <div id="chat-window" class="d-flex flex-column"></div>
+    <div id="chat-input-area">
+        <input type="text" id="user-input" class="form-control" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+        <button id="send-button" onclick="sendMessage()">Send</button>
+    </div>
+</div>
     <!-- Footer-Section -->
     <div class="footer-section">
       <div class="container">
@@ -326,11 +343,7 @@
                              About Us
                           </a>
                       </li>
-                      <li>
-                          <a href="our-team.html" class="text-decoration-none footer-link-p">
-                              Our Teams
-                          </a>
-                      </li>
+                     
                       <li>
                           <a href="contact.html" class="text-decoration-none footer-link-p">
                               Contact us
@@ -362,7 +375,7 @@
       <div class="footer-bar text-center">
           <div class="row">
               <div class="footer-bar-content w-100">
-                  <p class="text-size-16 mb-0">Whizcyber copyright © 2022. All Rights Reserved.</p>
+                  <p class="text-size-16 mb-0">AdrianCyber copyright © 2022. All Rights Reserved.</p>
               </div>
           </div>
      </div>
@@ -381,7 +394,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
   <script src="https://unpkg.com/ityped@0.0.10"></script>
   <script src="https://html.designingmedia.com/whizcyber/assets/js/type.js"></script>
-
+  <script src="./assets/js/chatbot.js"></script>
 </body>
 
 </html>

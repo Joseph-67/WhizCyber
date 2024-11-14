@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home | WhizCyber</title>
+<title>Home | AdrianCyber</title>
 <link rel="apple-touch-icon" sizes="57x57" href="https://html.designingmedia.com/whizcyber/assets/images/favicons/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
@@ -33,6 +33,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
 <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="./assets/css/chatbot.css">
 <style>
    .dropdown-menu{
     min-width: 250px;
@@ -49,154 +50,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
    line-height: 1.5;
    overflow-wrap: break-word;
    }
-        /* Ensure chatbot stays above other content */
-        #chatbot-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 300px;
-            max-width: 90vw;  /* Flexible width */
-            display: none;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-            background-color: #fff;
-            z-index: 1050; /* Keep it on top */
-        }
-        #chat-header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        #chat-window {
-            height: 300px;
-            overflow-y: auto;
-            padding: 15px;
-            background-color: #f8f9fa;
-        }
-        .message {
-            margin-bottom: 10px;
-            max-width: 80%;
-            padding: 8px 12px;
-            border-radius: 15px;
-            word-wrap: break-word;
-        }
-        .user-message {
-            background-color: #d1ecf1;
-            text-align: right;
-            align-self: flex-end;
-        }
-        .bot-message {
-            background-color: #e2e3e5;
-            align-self: flex-start;
-        }
-        .faq-suggestion {
-            background-color: #e9ecef;
-            color: #007bff;
-            cursor: pointer;
-            padding: 5px;
-            margin: 5px 0;
-            border-radius: 10px;
-            display: inline-block;
-        }
-        #chat-input-area {
-            display: flex;
-            border-top: 1px solid #ddd;
-            padding: 8px;
-            background-color: #fff;
-        }
-        #user-input {
-            flex: 1;
-            border: none;
-            padding: 8px;
-            border-radius: 5px;
-            outline: none;
-        }
-        #send-button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 0 15px;
-            margin-left: 8px;
-            border-radius: 5px;
-        }
-        /* Styles for chatbot icon */
-        #chat-icon {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #007bff;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            #chatbot-container {
-                width: 90vw;
-                bottom: 10px;
-                right: 10px;
-            }
-            #chat-header {
-                font-size: 14px;
-                padding: 8px;
-            }
-            #chat-window {
-                height: 250px;
-                padding: 10px;
-            }
-            .message {
-                font-size: 14px;
-            }
-            #chat-input-area {
-                padding: 8px;
-            }
-            #user-input {
-                padding: 10px;
-                font-size: 14px;
-            }
-            #send-button {
-                padding: 8px 12px;
-                font-size: 14px;
-            }
-            #chat-icon {
-                width: 45px;
-                height: 45px;
-                font-size: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            #chatbot-container {
-                width: 95vw;
-                bottom: 5px;
-                right: 5px;
-            }
-            #chat-header {
-                font-size: 12px;
-                padding: 6px;
-            }
-            .faq-suggestion {
-                font-size: 12px;
-                padding: 4px;
-                margin: 3px 0;
-            }
-            #user-input {
-                font-size: 12px;
-            }
-        }
+        
 </style>
 </head>
 <body>
@@ -279,7 +133,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer">
                             <div class="home-banner-text" data-aos="fade-up" id="myContentDIV">
                                 <h1>We Provide <span class="h1-text">Cyber Solutions</span> For Your Security</h1>
                                 <p class="banner-paragraph">
-                                   Secure Your Digital Life with WhizCyber Protect your assets, recover lost data, and ensure your online safety with our specialized cybersecurity solutions.</p>
+                                   Secure Your Digital Life with AdrianCyber Protect your assets, recover lost data, and ensure your online safety with our specialized cybersecurity solutions.</p>
                                 <div class="banner-btn discover-btn-banner">
                                     <a href="contact.html" class="text-decoration-none">Get In Touch</a>
                                     <!-- <a href="contact.html" class="text-decoration-none play-button">Contact us</a> -->
@@ -387,7 +241,7 @@ Locate individuals, digital footprints, and assets globally. Our advanced tracki
                     <div class="about-us-content aos-init aos-animate" data-aos="fade-up">
                         <h6 class="autorix-text"  data-aos="fade-up">About us</h6>
                         <h2  data-aos="fade-up-left">24/7 Cyber Security Operation Center</h2>      
-                        <p class="aboutus-p" data-aos="fade-up-right">WhizCyber is a technology based tech support, which has been instrumental in providing their clients with the best customer experience. We provide various services that include: hacking a cell phone, sending text messages, or emailing with spyware. This company aims to make life easier for people who are facing relationship problem. We are the best hacking experts to hire for your specific needs. From modest monitoring of someone's phone to maliciously destroying evidence. We have you covered with the best hackers around!</p> 
+                        <p class="aboutus-p" data-aos="fade-up-right">AdrianCyber is a technology based tech support, which has been instrumental in providing their clients with the best customer experience. We provide various services that include: hacking a cell phone, sending text messages, or emailing with spyware. This company aims to make life easier for people who are facing relationship problem. We are the best hacking experts to hire for your specific needs. From modest monitoring of someone's phone to maliciously destroying evidence. We have you covered with the best hackers around!</p> 
                         <ul class="list-unstyled list-margin-bottom" data-aos="fade-up-right">
                             <li class="d-inline-block mb-lg-0 mb-3"><i class="fa-solid fa-check ml-0"></i><span class="d-inline-block email-span text-decoration-none list-span">Phone Hacking Service</span></li>
                             <li class="d-inline-block cloud-security-li"><i class="fa-solid fa-check margin-left-checkk"></i><span class="d-inline-block user-span text-decoration-none list-span">Test website Security</span></li>
@@ -555,7 +409,7 @@ Locate individuals, digital footprints, and assets globally. Our advanced tracki
                     <div class="about-us-content aos-init aos-animate" data-aos="fade-up">
                         <h6 class="autorix-text" data-aos="fade-up">Why choose us</h6>
                         <h2 data-aos="fade-up-right">We Spend 30,000 Hours Per Year to Against Threats</h2>      
-                        <p class="aboutus-p">World, As a white hat hacker we provide a safe and secure platform for people to find the ethical Hacking skills they need through my firm – whizCyber. Our team provide perfect services without worrying about service delivery.</p> 
+                        <p class="aboutus-p">World, As a white hat hacker we provide a safe and secure platform for people to find the ethical Hacking skills they need through my firm – AdrianCyber. Our team provide perfect services without worrying about service delivery.</p> 
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4">
                                 <div class="counter-box">
@@ -746,7 +600,7 @@ Locate individuals, digital footprints, and assets globally. Our advanced tracki
                     <div class="about-us-content aos-init aos-animate" data-aos="fade-up">
                         <h6 class="autorix-text" data-aos="fade-up">Our team</h6>
                         <h2 data-aos="fade-up-right" class="aos-init aos-animate">Expert Team Who are Behind the Security</h2>      
-                        <p class="aboutus-p">At Whiz Cyber, our team is composed of seasoned professionals dedicated to delivering innovative solutions in cybersecurity, web development, and digital strategy. Each member brings a wealth of experience and knowledge to the table, ensuring we stay at the forefront of technology and industry trends. </p> 
+                        <p class="aboutus-p">At AdrianCyber, our team is composed of seasoned professionals dedicated to delivering innovative solutions in cybersecurity, web development, and digital strategy. Each member brings a wealth of experience and knowledge to the table, ensuring we stay at the forefront of technology and industry trends. </p> 
                         <p class="aboutus-p our-teamp2">With a commitment to excellence, our team collaborates closely to provide exceptional service and support to help you navigate the digital landscape confidently.
 
                         </p>
@@ -825,7 +679,7 @@ Locate individuals, digital footprints, and assets globally. Our advanced tracki
                                             <li><i class="fa-solid fa-star"></i></li>
                                             <li><i class="fa-solid fa-star"></i></li>
                                         </ul>  
-                                       <h4>“My Facebook account was hacked, and the hackers were posting inappropriate content. WhizCyber not only helped me recover my account but also advised me on securing all my online profiles. I feel much safer now.”</h4>
+                                       <h4>“My Facebook account was hacked, and the hackers were posting inappropriate content. AdrianCyber not only helped me recover my account but also advised me on securing all my online profiles. I feel much safer now.”</h4>
                                    
                                     </div>
                                 </div>
@@ -839,7 +693,7 @@ Locate individuals, digital footprints, and assets globally. Our advanced tracki
                                             <li><i class="fa-solid fa-star"></i></li>
                                             <li><i class="fa-solid fa-star"></i></li>
                                         </ul>    
-                                <h4>“I needed help with a sensitive family matter, and WhizCyber the investigation with utmost discretion and professionalism. They provided the information I needed without compromising anyone’s privacy.”</h4>
+                                <h4>“I needed help with a sensitive family matter, and AdrianCyber the investigation with utmost discretion and professionalism. They provided the information I needed without compromising anyone’s privacy.”</h4>
                               
                                 </div>
                             </div>
@@ -956,11 +810,7 @@ Locate individuals, digital footprints, and assets globally. Our advanced tracki
                                About Us
                             </a>
                         </li>
-                        <li>
-                            <a href="our-team.html" class="text-decoration-none footer-link-p">
-                                Our Teams
-                            </a>
-                        </li>
+                     
                         <li>
                             <a href="contact.html" class="text-decoration-none footer-link-p">
                                 Contact us
@@ -992,107 +842,12 @@ Locate individuals, digital footprints, and assets globally. Our advanced tracki
         <div class="footer-bar text-center">
             <div class="row">
                 <div class="footer-bar-content w-100">
-                    <p class="text-size-16 mb-0">Whizcyber copyright © 2022. All Rights Reserved.</p>
+                    <p class="text-size-16 mb-0">AdrianCyber copyright © 2022. All Rights Reserved.</p>
                 </div>
             </div>
        </div>
     </div>
-    <script>
-        let faqData = {
-            "What services do you offer?": "We provide a range of cybersecurity services, including vulnerability assessments, penetration testing, and incident response.",
-            "How can I contact support?": "You can reach our support team by emailing support@whizcyber.com.",
-            "What is your pricing structure?": "Our pricing varies based on the services selected. Contact us for a detailed quote tailored to your needs."
-        };
-    
-        // Toggle chatbot visibility and show greeting and FAQ suggestions if just opened
-        function toggleChatbot() {
-            const chatbot = document.getElementById('chatbot-container');
-            const chatIcon = document.getElementById('chat-icon');
-    
-            if (chatbot.style.display === 'none' || chatbot.style.display === '') {
-                chatbot.style.display = 'block';
-                chatIcon.style.display = 'none';
-    
-                // Show greeting and FAQ suggestions only if opened for the first time
-                if (!chatbot.classList.contains('greeting-shown')) {
-                    displayMessage("Hello! Welcome to Whiz Cyber. How can I assist you today?", 'bot');
-                    displayFAQSuggestions();
-                    chatbot.classList.add('greeting-shown');  // Mark as shown to avoid repeating
-                }
-            } else {
-                chatbot.style.display = 'none';
-                chatIcon.style.display = 'flex';
-            }
-        }
-    
-        // Display a list of FAQ suggestions
-        function displayFAQSuggestions() {
-            const chatWindow = document.getElementById('chat-window');
-            const faqContainer = document.createElement('div');
-            
-            faqContainer.classList.add('faq-container');
-            faqContainer.innerHTML = "<p><strong>Here are some questions you might find helpful:</strong></p>";
-            
-            Object.keys(faqData).forEach((question) => {
-                const suggestion = document.createElement('div');
-                suggestion.classList.add('faq-suggestion');
-                suggestion.textContent = question;
-                suggestion.onclick = () => handleFAQClick(question);
-                faqContainer.appendChild(suggestion);
-            });
-    
-            chatWindow.appendChild(faqContainer);
-            chatWindow.scrollTop = chatWindow.scrollHeight;
-        }
-    
-        // Handle FAQ suggestion click and send corresponding response
-        function handleFAQClick(question) {
-            displayMessage(question, 'user');
-            const botResponse = faqData[question] || "I'm sorry, I don't have an answer for that.";
-            setTimeout(() => displayMessage(botResponse), 500);
-        }
-    
-        // Display messages in chat window
-        function displayMessage(message, sender = 'bot') {
-            const chatWindow = document.getElementById('chat-window');
-            const messageDiv = document.createElement('div');
-            messageDiv.className = 'message ' + (sender === 'bot' ? 'bot-message' : 'user-message');
-            messageDiv.innerHTML = message;  // Allow HTML for link
-            chatWindow.appendChild(messageDiv);
-            chatWindow.scrollTop = chatWindow.scrollHeight;
-        }
-    
-        // Process user message and respond with FAQ data or a friendly response
-        function sendMessage() {
-            const userInput = document.getElementById('user-input');
-            const userMessage = userInput.value.trim().toLowerCase();
-    
-            if (userMessage) {
-                displayMessage(userInput.value, 'user');
-                userInput.value = '';
-    
-                // Check for greetings and send friendly response
-                if (userMessage.includes('hi') || userMessage.includes('hello')) {
-                    setTimeout(() => displayMessage("Hi there! Check out our FAQs or reach out to us for more info on our <a href='/contact' target='_blank'>Contact Us</a> page."), 500);
-                }
-                // Find matching answer from FAQ data
-                else if (faqData[userMessage]) {
-                    setTimeout(() => displayMessage(faqData[userMessage]), 500);
-                } else {
-                    // Default response for questions not in the FAQ
-                    const botResponse = "Sorry, I couldn't find an answer for that. Please feel free to reach out to us on our <a href='/contact' target='_blank'>Contact Us</a> page for more help.";
-                    setTimeout(() => displayMessage(botResponse), 500);
-                }
-            }
-        }
-    
-        // Allow pressing Enter to send message
-        function handleKeyPress(event) {
-            if (event.key === "Enter") {
-                sendMessage();
-            }
-        }
-    </script>
+
     <script src="./assets/js/jquery-1.12.1.min.js"></script>
     <script src="./assets/js/animations.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
@@ -1107,5 +862,6 @@ Locate individuals, digital footprints, and assets globally. Our advanced tracki
     <script src="./assets/js/ityped.js"></script>
     <script src="./assets/js/type.js"></script>  
     <script src="./assets/js/custom-script.js"></script>
+    <script src="./assets/js/chatbot.js"></script>
 </body>
 </html>
