@@ -16,7 +16,7 @@ function toggleChatbot() {
 
         // Show greeting and FAQ suggestions only if opened for the first time
         if (!chatbot.classList.contains('greeting-shown')) {
-            displayMessage("Hello! Welcome to Whiz Cyber. How can I assist you today?", 'bot');
+            displayMessage("Hello! Welcome to Adrian Cyber. How can I assist you today?", 'bot');
             displayFAQSuggestions();
             chatbot.classList.add('greeting-shown');  // Mark as shown to avoid repeating
         }
